@@ -26,7 +26,7 @@ Space::Space(unsigned int MatrixSize) {
 
 void Space::ClearSpace() {
 
-	for (short i = 0; i < size; i++) {
+	for (unsigned short i = 0; i < size; i++) {
 		matrix[i] = 0;
 	}
 }

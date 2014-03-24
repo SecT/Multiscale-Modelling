@@ -7,9 +7,13 @@
 //============================================================================
 
 #include <iostream>
+#include "Space.h"
 using namespace std;
 
 int main() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+
+	Space TestSpace(10);
+
 	return 0;
 }
