@@ -13,10 +13,16 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     Space.cpp \
-    spacegui.cpp
+    spacegui.cpp \
+    cellularautomaton.cpp \
+    rule.cpp \
+    rulemoor.cpp
 
 HEADERS  += mainwindow.h \
     Space.h \
-    spacegui.h
+    spacegui.h \
+    cellularautomaton.h \
+    rule.h \
+    rulemoor.h
 
 FORMS    += mainwindow.ui
