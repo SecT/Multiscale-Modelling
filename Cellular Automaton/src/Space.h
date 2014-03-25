@@ -10,16 +10,21 @@
 
 class Space {
 private:
-	unsigned short int* matrix; //representation of automaton space
+        unsigned short* matrix; //representation of automaton space
 	unsigned int size;
 
 
-	void ClearSpace(); //fill the space with zeroes
+
 
 public:
 	Space();
 	Space(unsigned int MatrixSize);
 	virtual ~Space();
+
+        int GetSize();
+        short GetValue(int position);
+        void SetValue(short value, int position);
+        void ClearSpace(); //fill the space with zeroes
 };
 
 #endif /* SPACE_H_ */

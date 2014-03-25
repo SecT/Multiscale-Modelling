@@ -31,6 +31,21 @@ void Space::ClearSpace() {
 	}
 }
 
+int Space::GetSize()
+{
+    return size;
+}
+
+short Space::GetValue(int position)
+{
+    return matrix[position];
+}
+
+void Space::SetValue(short value, int position)
+{
+    matrix[position] = value;
+};
+
 Space::~Space() {
 	// TODO Auto-generated destructor stub
 
