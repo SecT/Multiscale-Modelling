@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT += widgets
 
 TARGET = Cellular_Automaton
 TEMPLATE = app
