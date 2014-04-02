@@ -60,6 +60,7 @@ void MainWindow::on_randomizeButton_clicked()
 {
     int NumberOfRandomGrains = 3;
 
+
     QTime time = QTime::currentTime();
     qsrand((uint)time.msec());
 
