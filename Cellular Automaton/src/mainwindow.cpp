@@ -4,9 +4,12 @@
 
 #include <QtGlobal>
 #include <QTime>
+#include <QDebug>
 
 #include "spacegui.h"
 #include "Space.h"
+
+#include "rulemoore.h"
 
 MainWindow::MainWindow(QWidget *parent) :
         QMainWindow(parent),
@@ -20,6 +23,12 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //TODO: only for test
     mySpace->SetValue(1, 25);
+
+    CAutomaton = new CellularAutomaton(mySpace);
+
+    myRule = new RuleMoore();
+
+    CAutomaton->SetRule(myRule);
 
     ui->graphicsView->setAlignment(Qt::AlignLeft | Qt::AlignTop);
 
@@ -36,6 +45,9 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete ui;
+
+    delete CAutomaton;
+    delete spaceGUI;
 }
 
 void MainWindow::on_pushButton_clicked()
@@ -64,3 +76,10 @@ void MainWindow::on_randomizeButton_clicked()
 }
 
 
+
+void MainWindow::on_RunButton_clicked()
+{
+    qDebug()<<"RunButton clicked";
+    CAutomaton->Step();
+    spaceGUI->update();
+}

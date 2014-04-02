@@ -50,6 +50,19 @@
      <string>Randomize</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="RunButton">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>240</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Run</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -57,7 +70,7 @@
      <x>0</x>
      <y>0</y>
      <width>549</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuCellular_Automaton_Multiscale_Modelling_project_by_Grzegorz_Starowicz">
