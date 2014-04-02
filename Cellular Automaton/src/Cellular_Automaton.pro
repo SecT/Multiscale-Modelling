@@ -17,13 +17,13 @@ SOURCES += main.cpp\
     spacegui.cpp \
     cellularautomaton.cpp \
     rule.cpp \
-    rulemoor.cpp
+    rulemoore.cpp
 
 HEADERS  += mainwindow.h \
     Space.h \
     spacegui.h \
     cellularautomaton.h \
     rule.h \
-    rulemoor.h
+    rulemoore.h
 
 FORMS    += mainwindow.ui
